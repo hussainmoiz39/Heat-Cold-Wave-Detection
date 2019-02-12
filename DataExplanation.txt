@@ -1,0 +1,115 @@
+	IMD High resolution 1By1 degree gridded daily temperature data (1951-2014)*
+
+	This data is arranged in 31x31 grid points.
+	Lat  7.5N, 8.5N ...  36.5, 37.5 (31 Values)
+	Long 67.5E, 68.5E  ...  96.5, 97.5 (31 Values) 
+	Maximum Temperature, Minimum Temperature and Mean Tempareture 
+	gridded data are in the directories  viz. MaxT ,MinT and MeanT.
+
+	Each directory contains 64 binary data files and 
+	64 ascii (text) data files one each for 64 years (1951-2014)
+	The data file is named as MAXT1969.grd, MAXT1969.txt etc.
+	The relevant Grads control file, is also included.
+
+	For leap years, data for 366 days are included.
+ 	The unit of tempereture is in Celcious
+ 	Sample Fortran and C programs to read the binary data are given below. 
+
+	The relevant reference research paper ncc research report 8 is encluded
+	Development of a High Resolution Daily Gridded Temperature Data Set (1969-2005)
+	for the Indian Region
+	A K Srivastava, M Rajeevan and S R Kshirsagar
+
+	* Gridded data for the year 2008 and onwards are based on relatively less number of stations
+	(around 180) for which data were received operationaly on real time basis.
+	========================================================
+	Sample Fortran program to read the data is given below:
+	========================================================
+ 
+*	This program reads binary data for 365/366 days and writes in ascii file.
+	PROGRAM READ
+
+	PARAMETER(ISIZ=31,JSIZ=31)
+	DIMENSION T(366,ISIZ,JSIZ)
+
+	OPEN(1,FILE='D:\\DailyT\\MeanT\\MEANT1980.GRD',
+	1      FORM='UNFORMATTED',ACCESS='DIRECT',
+	2      RECL=ISIZ*JSIZ*4,STATUS='OLD')
+	OPEN(2,FILE='D:\\DAILYT\\MEANT15APR1980.TXT',STATUS='UNKNOWN')
+
+*	TAKE NDAY=366 FOR LEAP YEARS
+	NDAY=366
+
+	DO IDAY = 1,NDAY
+	   READ(1,REC=IDAY)((T(IDAY,I,J),J=1,JSIZ),I=1,ISIZ)
+        ENDDO
+	  
+	WRITE(2,'('' Daily Tempereture for 15 APR 1980 '')')
+	DO I = 1,ISIZ
+	   WRITE(2,'(31F6.2)')(T(106,I,J),J=1,JSIZ)
+	ENDDO
+
+	STOP
+	END
+
+	===========================================================
+	Sample C program to read the data is given below:
+	===========================================================
+
+/* This program reads binary data for 365/366 days and writes in ascii file. */
+        #include<stdio.h>
+
+        main()
+        {  float t[31][31];
+	     int i,j ,k;
+           FILE *fin,*fout;
+
+           fin = fopen("D:\\DailyT\\MeanT\\MEANT1980.GRD","rb");   // Input file
+           fout = fopen("D:\\DailyT\\MEANT15APR1980.TXT","w");     // Output file
+
+           fprintf(fout,"Daily Tempereture for 15 April 1980\n");
+           if(fin == NULL)
+           {  printf("Can't open file");
+              return 0;
+           }
+           if(fout == NULL)
+           {  printf("Can't open file");
+              return 0;
+           }
+           for(k=0 ; k<366 ; k++)
+           {  fread(&t,sizeof(t),1,fin) ;
+              if(k == 105)
+              {  for(i=0 ; i < 31 ; i++)
+	           {  fprintf(fout,"\n") ;
+	              for(j=0 ; j < 31 ; j++)
+                    fprintf(fout,"%6.2f",t[i][j]);
+                 }
+              }  
+           }  
+           fclose(fin);
+           fclose(fout);
+           return 0;
+        } /* end of main */
+
+============================================================
+
+Disclaimer
+
+Although every care has been taken in preparing and testing the data set, 
+India Meteorological Department cannot guarantee that the data are correct
+in all circumstances. IMD also does not accept any liability whatsoever
+for any error or omission in the data, or for any loss or damage arising from its use. 
+
+For comments and questions on the data or if you encounter any problems, please contact:
+
+National Climate Centre,
+India Meteorological Department,
+Shivajinagar, Pune, INDIA. 411 005.
+
+Phone: 091-20-25572211 /25572222 / 25533426
+FAX: 091-20-25535435.
+E Mail: ncc@imd.gov.in
+        cmpgpune@gmail.com
+        ncc_pune@yahoo.in
+
+===============================================================     
