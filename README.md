@@ -8,7 +8,10 @@ b) Min temperature
 
 c) Average Tempersture
 
-a) Interpolation technique
+
+Step1) will visualize data in arcgis and gstat integrated with qgis. clean data using python libraries.
+
+Step 2) Interpolation technique
 
 "gridded data" for precip is obtained by interpolation from rain gage data perhaps as spatial averages, in that case you need to know what interpolation method was used and how it was used. Likewise temperature is usually observed at point locations and you only get gridded data by interpolation.
 
