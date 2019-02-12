@@ -1,8 +1,11 @@
 Independent-Study-Project
 
 Data given:
+
 a) Max Temperature
+
 b) Min temperature
+
 c) Average Tempersture
 
 a) Interpolation technique
@@ -13,13 +16,13 @@ a) Interpolation technique
     
     methods:
     
-           a) Point baswd interpolation techniques
+           Point baswd interpolation techniques
            
-           b) IDW inveerse distance interpolation
+           a) IDW inveerse distance interpolation
            
-           c) Spline Interpolation Technique
+           b) Spline Interpolation Technique
            
-           d) Kriging Interpolation technique
+           c) Kriging Interpolation technique
    
 Referemces:
 
