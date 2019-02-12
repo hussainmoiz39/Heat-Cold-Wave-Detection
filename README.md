@@ -20,4 +20,11 @@ a) Interpolation technique
            c) Spline Interpolation Technique
            
            d) Kriging Interpolation technique
-           
+   
+Referemces:
+
+https://www.google.com/amp/s/www.researchgate.net/post/What_is_an_appropriate_spatial-interpolation_method_for_temperature/amp
+
+https://m.youtube.com/watch?v=FJAiJ1fVljo
+
+http://www.gisresources.com/types-interpolation-methods_3/
