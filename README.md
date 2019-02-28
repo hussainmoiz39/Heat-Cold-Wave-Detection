@@ -34,3 +34,19 @@ https://www.google.com/amp/s/www.researchgate.net/post/What_is_an_appropriate_sp
 https://m.youtube.com/watch?v=FJAiJ1fVljo
 
 http://www.gisresources.com/types-interpolation-methods_3/
+
+
+## Challenges:
+
+Extremeties:
+
+It is always taken that for atleast 6 days if temperature exceed 90% percentile its heat wave and if its less than 10% its cold wave.
+
+But For India, It depend on grid.
+
+
+For threshold temperature:
+
+a) For each grid, set temperature as Mean +/- 3* Std. Cons: It also depend on nearby areas. It might ignore temperature of surrounding areas.
+
+b) we have to find different threshold of days and temperature for each grid. One approach is we have temperature, lattitude, longitude,dates: we find spatial clusters inside india. Clusters should take distance into account. After finding clusters, we set threshold for each cluster by finding mean and Std. It takes surrounding areas into account and temperature acoss full data.  
