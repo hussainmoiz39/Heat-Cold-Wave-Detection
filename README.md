@@ -49,4 +49,12 @@ For threshold temperature:
 
 a) For each grid, set temperature as Mean +/- 3* Std. Cons: It also depend on nearby areas. It might ignore temperature of surrounding areas.
 
-b) we have to find different threshold of days and temperature for each grid. One approach is we have temperature, lattitude, longitude,dates: we find spatial clusters inside india. Clusters should take distance into account. After finding clusters, we set threshold for each cluster by finding mean and Std. It takes surrounding areas into account and temperature acoss full data.  
+b) we have to find different threshold of days and temperature for each grid. One approach is we have temperature, lattitude, longitude,dates: we find spatial clusters inside india. Clusters should take distance into account. After finding clusters, we set threshold for each cluster by finding mean and Std. It takes surrounding areas into account and temperature acoss full data.
+
+
+## Studies:
+
+https://www.sarahinscience.com/blog/whats-the-right-way-to-measure-heatwaves
+
+https://www.researchgate.net/publication/270292252_The_Excess_Heat_Factor_A_Metric_for_Heatwave_Intensity_and_Its_Use_in_Classifying_Heatwave_Severity
+
