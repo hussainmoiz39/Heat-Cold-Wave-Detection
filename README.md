@@ -57,11 +57,11 @@ b) we have to find different threshold of days and temperature for each grid. On
 
 
 Specs to be considered( for presentation and workflows) -:
-intensity
-co-relation
-frequency 
-vulnerability
-population projection
+a) Intensity
+b) Co-relation
+c) Frequency 
+d) Vulnerability
+e) Population projection
 
 
 
