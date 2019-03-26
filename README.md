@@ -27,6 +27,10 @@ Step 2 -:  Interpolation Technique
            
            c) Kriging Interpolation technique
    
+Step 3-: Find Threshold and Cluster based on some algorithm
+
+Step4: Find Correlation, risk and Intensity between grids as well along with population data. like what is the frequency of heat waves in that grid. What is intensity and how grids are correlated.
+
 Referemces:
 
 https://www.google.com/amp/s/www.researchgate.net/post/What_is_an_appropriate_spatial-interpolation_method_for_temperature/amp
