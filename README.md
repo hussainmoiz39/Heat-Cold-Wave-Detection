@@ -72,3 +72,7 @@ https://www.sarahinscience.com/blog/whats-the-right-way-to-measure-heatwaves
 
 https://www.researchgate.net/publication/270292252_The_Excess_Heat_Factor_A_Metric_for_Heatwave_Intensity_and_Its_Use_in_Classifying_Heatwave_Severity
 
+https://www.sarahinscience.com/blog/whats-the-right-way-to-measure-heatwaves
+
+https://iopscience.iop.org/article/10.1088/1748-9326/aa9388
+
