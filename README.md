@@ -76,3 +76,6 @@ https://www.sarahinscience.com/blog/whats-the-right-way-to-measure-heatwaves
 
 https://iopscience.iop.org/article/10.1088/1748-9326/aa9388
 
+https://www.researchgate.net/post/Is_there_any_methods_to_do_spatial_clustering_of_points_with_measured_attributes_like_water_quality_parameters
+
+http://www.ekazakov.info/projects/abc_tutorial.html
