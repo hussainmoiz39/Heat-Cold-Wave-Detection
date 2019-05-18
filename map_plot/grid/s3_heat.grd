@@ -1,0 +1,26 @@
+[general]
+creator=R package 'raster'
+created=2019-03-26 16:40:34
+[georeference]
+nrows=27
+ncols=28
+xmin=68
+ymin=8
+xmax=96
+ymax=35
+projection=NA
+[data]
+datatype=FLT4S
+byteorder=little
+nbands=1
+bandorder=BIL
+categorical=FALSE
+minvalue=30.710581765283
+maxvalue=47.4940057613506
+nodatavalue=-3.4e+38
+[legend]
+legendtype=
+values=
+color=
+[description]
+layername=spike

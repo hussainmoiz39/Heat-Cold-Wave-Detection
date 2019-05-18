@@ -1,0 +1,11 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>spike</Description>
+    <Metadata>
+      <MDI key="STATISTICS_MAXIMUM">39.16136932373</MDI>
+      <MDI key="STATISTICS_MEAN">34.087890219546</MDI>
+      <MDI key="STATISTICS_MINIMUM">18.908483505249</MDI>
+      <MDI key="STATISTICS_STDDEV">3.9247867876231</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

@@ -1,0 +1,7 @@
+Put filename.csv inside that and corresponding column name of lattitude and longitude in converttoraster.R
+
+Then run converttoraster.R
+
+get your file .grd and .gri in grid folder.
+
+Load .grd file as raster layer in QGIS.
